@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Progetto MAADB</title>
+  <link rel='stylesheet' href='/stylesheets/style.css'>
+  <script src="/javascripts/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+<header class="page-header">
+  <div class="container">
+    <h1 class="title">Progetto MAADB</h1>
+    <p class="subtitle">di Roberto Pegoraro e Luca Schiavon</p>
+  </div>
+</header>
+
+<main class="container">
+  <section class="grid">
+
+    <!-- BLOCCO 1 -->
+    <article class="query-card" id="q1">
+      <div class="query-left">
+        <h2 class="query-title">Query 1</h2>
+        <p class="query-desc">
+          Creator più attivo per un dato forum.
+        </p>
+        <button id="test1" class="btn" type="submit" data-target="q1-result" onclick="q1('q1-result')">
+          Esegui query
+        </button>
+      </div>
+
+      <div class="query-right" aria-live="polite">
+        <h3 class="result-title">Risultato</h3>
+        <div class="result-box" id="q1-result">
+          <p class="placeholder">Qui verrà mostrato il risultato della query.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- BLOCCO 2 -->
+    <article class="query-card" id="q2">
+      <div class="query-left">
+        <h2 class="query-title">Query 2</h2>
+        <p class="query-desc">
+          Trending tag class di una determinata nazione
+        </p>
+        <button class="btn" type="button" data-target="q2-result" onclick="q2('q2-result')">
+          Esegui query
+        </button>
+      </div>
+
+      <div class="query-right" aria-live="polite">
+        <h3 class="result-title">Risultato</h3>
+        <div class="result-box" id="q2-result">
+          <p class="placeholder">Qui verrà mostrato il risultato della query.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- BLOCCO 3 -->
+    <article class="query-card" id="q3">
+      <div class="query-left">
+        <h2 class="query-title">Query 3</h2>
+        <p class="query-desc">
+          Quali sono i tag più frequenti di una determinata università.
+        </p>
+        <button class="btn" type="button" data-target="q3-result" onclick="q3('q3-result')">
+          Esegui query
+        </button>
+      </div>
+
+      <div class="query-right" aria-live="polite">
+        <h3 class="result-title">Risultato</h3>
+        <div class="result-box" id="q3-result">
+          <p class="placeholder">Qui verrà mostrato il risultato della query.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- BLOCCO 4 -->
+    <article class="query-card" id="q4">
+      <div class="query-left">
+        <h2 class="query-title">Query 4</h2>
+        <p class="query-desc">
+          Utenti suggeriti basandosi sulle conoscenze comuni.
+        </p>
+        <button class="btn" type="button" data-target="q4-result" onclick="q4('q4-result')" >
+          Esegui query
+        </button>
+      </div>
+
+      <div class="query-right" aria-live="polite">
+        <h3 class="result-title">Risultato</h3>
+        <div class="result-box" id="q4-result">
+          <p class="placeholder">Qui verrà mostrato il risultato della query.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- BLOCCO 5 -->
+    <article class="query-card" id="q5">
+      <div class="query-left">
+        <h2 class="query-title">Query 5</h2>
+        <p class="query-desc">
+          Utenti suggeriti basandosi sugli interessi comuni.
+        </p>
+        <button class="btn" type="button" data-target="q5-result" onclick="q5('q5-result')">
+          Esegui query
+        </button>
+      </div>
+
+      <div class="query-right" aria-live="polite">
+        <h3 class="result-title">Risultato</h3>
+        <div class="result-box" id="q5-result">
+          <p class="placeholder">Qui verrà mostrato il risultato della query.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- BLOCCO 6 -->
+    <article class="query-card" id="q6">
+      <div class="query-left">
+        <h2 class="query-title">Query 6</h2>
+        <p class="query-desc">
+          Età media di una nazione
+        </p>
+        <button class="btn" type="button" data-target="q6-result" onclick="q6('q6-result')">
+          Esegui query
+        </button>
+      </div>
+
+      <div class="query-right" aria-live="polite">
+        <h3 class="result-title">Risultato</h3>
+        <div class="result-box" id="q6-result">
+          <p class="placeholder">Qui verrà mostrato il risultato della query.</p>
+        </div>
+      </div>
+    </article>
+
+  </section>
+</main>
+
+<footer class="page-footer">
+  <div class="container">
+    <small>© Progetto MAADB</small>
+  </div>
+</footer>
+</body>
+</html>

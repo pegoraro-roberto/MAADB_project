@@ -1,0 +1,92 @@
+/* Base */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #111;
+  background: #f6f7fb;
+}
+
+/* Layout container */
+.container {
+  width: min(1200px, 92vw);
+  margin: 0 auto;
+}
+
+/* Header */
+.page-header {
+  padding: 28px 0 18px;
+  background: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+}
+.title { margin: 0; font-size: 40px; letter-spacing: -0.5px; }
+.subtitle { margin: 8px 0 0; color: #444; }
+
+/* Grid (desktop-first) */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding: 20px 0 28px;
+}
+
+/* Card */
+.query-card {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 16px;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+.query-title { margin: 0 0 8px; font-size: 20px; }
+.query-desc { margin: 0 0 14px; color: #333; line-height: 1.35; }
+
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 10px;
+  background: #2f6fed;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn:hover { filter: brightness(0.95); }
+
+/* Result area */
+.result-title {
+  margin: 0 0 10px;
+  font-size: 16px;
+  color: #222;
+}
+.result-box {
+  min-height: 120px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #f3f5ff;
+  border: 1px dashed #c9d3ff;
+  overflow: auto;
+}
+.placeholder { margin: 0; color: #555; }
+
+/* Footer */
+.page-footer {
+  padding: 18px 0;
+  color: #666;
+}
+
+/* Responsive (solo desktop/laptop: niente smartphone/tablet) */
+@media (max-width: 1024px) {
+  .query-card {
+    grid-template-columns: 1fr; /* stack su schermi più piccoli */
+  }
+}
+
+/* Evita layout mobile: se scende sotto 768px, mantieni leggibilità ma non “mobile-first” */
+@media (max-width: 768px) {
+  body { min-width: 768px; overflow-x: auto; }
+}
